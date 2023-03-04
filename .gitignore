@@ -40,7 +40,6 @@ luac.out
 *.hex
 
 .metadata
-.project
 bin/
 tmp/
 *.tmp
