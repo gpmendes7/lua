@@ -26,6 +26,6 @@ head:setConnectorBase(connectorBase)
 
 doc:setHead(head)
 
-local fileName = "LuaNa(API)/test/createDocument/docs/connectorBase2.conn"
+local fileName = "test/createDocument/docs/connectorBase2.conn"
 doc:saveNcl(fileName)
-os.execute("java -jar LuaNa(API)/ncl-validator-1.4.20.jar -nl pt_BR "..fileName)
+os.execute("java -jar ncl-validator-1.4.20.jar -nl pt_BR "..fileName)
