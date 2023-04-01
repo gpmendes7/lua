@@ -202,7 +202,7 @@ function AssessmentStatement:getValueAssessment()
 end
 
 ---
--- Removes the &lt;valueAssessment&gt; ncl child element of &lt;assessmentStatement&gt; ncl element.
+-- Removes the &lt;valueAssessment&gt; ncl child element of &lt;assessmentStatement&gt; element.
 function AssessmentStatement:removeValueAssessment()
   self:removeChild(self.valueAssessment)
   self.valueAssessment = nil
