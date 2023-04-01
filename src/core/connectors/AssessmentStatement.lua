@@ -11,21 +11,32 @@ local ValueAssessment = require "src/core/connectors/ValueAssessment"
 
 local AssessmentStatement = NCLElem:extends()
 
+---
 -- Name of &lt;assessmentstatement&gt; ncl element.
 AssessmentStatement.nameElem = "assessmentStatement"
 
+---
 -- List with maps to associate classes representing children elements from &lt;assessmentstatement&gt; ncl element.
+-- @field attributeAssessment list where second item expresses cardinality of &lt;assessmentstatement&gt; ncl child element (many).
+-- @field valueAssessment list where second item expresses cardinality of &lt;valueAssessment&gt; ncl child element (one).
+-- @table childrenMap
 AssessmentStatement.childrenMap = {
   attributeAssessment = {AttributeAssessment, "many"},
   valueAssessment = {ValueAssessment, "one"}
 }
 
+---
 -- List containing the data types of each attribute belonging to &lt;assessmentstatement&gt; element.
+-- @field comparator type of comparator attribute (string).
+-- @table attributesTypeMap
 AssessmentStatement.attributesTypeMap = {
   comparator = "string"
 }
 
+---
 -- List containing all possible pre-definied values to string attributes belonging to &lt;assessmentstatement&gt; ncl element. 
+-- @field comparator list with possible values to comparator attribute ("eq", "ne", "gt", "lt", "gte" or "lte").
+-- @table attributesStringValueMap
 AssessmentStatement.attributesStringValueMap = {
   comparator = {"eq", "ne", "gt", "lt", "gte", "lte"}
 }
