@@ -1,4 +1,4 @@
-local Region = require "core/layout/Region"
+local Region = require "src/core/layout/Region"
 
 local function test1()
   local region = Region:create()

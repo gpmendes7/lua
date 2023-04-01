@@ -3,7 +3,7 @@ require("src/core/LuaNa")
 local doc = Document:create()
 
 -- load this file
--- doc:loadNcl("docs/nclcd/exemplo01.ncl")
+doc:loadNcl("docs/nclcd/exemplo01.ncl")
 
 -- doc:loadNcl("docs/nclcd/composerConnectorBase.conn")
 -- doc:loadNcl("docs/nclcd/exemplo02.ncl")

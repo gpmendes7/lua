@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>AssessmentStatement</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>AssessmentStatement</code></h1>
+<p>Implements <a href="http://handbook.ncl.org.br/doku.php?id=assessmentstatement"/>&lt;assessmentStatement&gt;</a> ncl element.</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: <a href="https://eic.cefet-rj.br/~gpmm/"/>Grupo de Pesquisa em Multimídia</a>  2017-2023</li>
+        <li><strong>Author</strong>: Gabriel Pereira Mendes</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#create">create (attributes, full)</a></td>
+	<td class="summary">Returns a new AssessmentStatement object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setComparator">setComparator (comparator)</a></td>
+	<td class="summary">Sets a value to comparator attribute of
+ &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getComparator">getComparator ()</a></td>
+	<td class="summary">Returns the value of comparator attribute of
+ &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#addAttributeAssessment">addAttributeAssessment (attributeAssessment)</a></td>
+	<td class="summary">Adds a &lt;attributeAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getAttributeAssessmentPos">getAttributeAssessmentPos (p)</a></td>
+	<td class="summary">Returns a &lt;attributeAssessments&gt; child element of
+ &lt;assessmentStatement&gt; element
+ in position p.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setAttributeAssessments">setAttributeAssessments (...)</a></td>
+	<td class="summary">Adds so many &lt;attributeAssessment&gt; child elements of the &lt;assessmentStatement&gt; element
+ passed as parameters.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#removeAttributeAssessment">removeAttributeAssessment (attributeAssessment)</a></td>
+	<td class="summary">Removes a &lt;attributeAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#removeAttributeAssessmentPos">removeAttributeAssessmentPos (p)</a></td>
+	<td class="summary">Removes a &lt;attributeAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element in position p.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setValueAssessment">setValueAssessment (valueAssessment)</a></td>
+	<td class="summary">Sets the &lt;valueAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getValueAssessment">getValueAssessment ()</a></td>
+	<td class="summary">Returns the &lt;valueAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#removeValueAssessment">removeValueAssessment ()</a></td>
+	<td class="summary">Removes the &lt;valueAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#childrenMap">childrenMap</a></td>
+	<td class="summary">List with maps to associate classes representing
+ children elements of &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#attributesTypeMap">attributesTypeMap</a></td>
+	<td class="summary">List containing the data types of each attribute
+ belonging to &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#attributesStringValueMap">attributesStringValueMap</a></td>
+	<td class="summary">List containing all possible pre-definied values to string attributes
+ belonging to &lt;assessmentStatement&gt; ncl element .</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#nameElem">nameElem</a></td>
+	<td class="summary">Name of &lt;assessmentStatement&gt; ncl element.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "create"></a>
+    <strong>create (attributes, full)</strong>
+    </dt>
+    <dd>
+    Returns a new AssessmentStatement object.
+ If full flag is not nil, the object will
+ receive default children objects of each children class.
+
+ This case, full must be passed to the method with a valid number.
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">attributes</span>
+         list of attributes to be initialized.
+        </li>
+        <li><span class="parameter">full</span>
+         numeric flag to indicate if the object
+                will be created with filled children list.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        new AssessmentStatement object created.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setComparator"></a>
+    <strong>setComparator (comparator)</strong>
+    </dt>
+    <dd>
+    Sets a value to comparator attribute of
+ &lt;assessmentStatement&gt; ncl element.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">comparator</span>
+         comparator attribute of
+ &lt;assessmentStatement&gt; ncl element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getComparator"></a>
+    <strong>getComparator ()</strong>
+    </dt>
+    <dd>
+    Returns the value of comparator attribute of
+ &lt;assessmentStatement&gt; ncl element.
+
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        comparator attribute of &lt;assessmentStatement&gt; ncl element.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "addAttributeAssessment"></a>
+    <strong>addAttributeAssessment (attributeAssessment)</strong>
+    </dt>
+    <dd>
+    Adds a &lt;attributeAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">attributeAssessment</span>
+         object representing the
+ &lt;attributeAssessment&gt; ncl element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getAttributeAssessmentPos"></a>
+    <strong>getAttributeAssessmentPos (p)</strong>
+    </dt>
+    <dd>
+    Returns a &lt;attributeAssessments&gt; child element of
+ &lt;assessmentStatement&gt; element
+ in position p.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">p</span>
+         position of the object representing the &lt;attributeAssessments&gt; element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setAttributeAssessments"></a>
+    <strong>setAttributeAssessments (...)</strong>
+    </dt>
+    <dd>
+    Adds so many &lt;attributeAssessment&gt; child elements of the &lt;assessmentStatement&gt; element
+ passed as parameters.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         objects representing the &lt;attributeAssessment&gt; ncl element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "removeAttributeAssessment"></a>
+    <strong>removeAttributeAssessment (attributeAssessment)</strong>
+    </dt>
+    <dd>
+    Removes a &lt;attributeAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">attributeAssessment</span>
+         object representing the &lt;attributeAssessment&gt; ncl element.
+        </li>
+    </ul>
+
+
+    <h3>Raises:</h3>
+
+ <ul>
+ <li>error 1: "Error! Invalid attributeAssessment element!."</li>
+ <li>error 2: "Error! assessmentStatement element with nil children list!".</li>
+ <li>error 3: "Error! assessmentStatement element with nil attributeAssessments list!".</li>
+ </ul>
+
+
+
+</dd>
+    <dt>
+    <a name = "removeAttributeAssessmentPos"></a>
+    <strong>removeAttributeAssessmentPos (p)</strong>
+    </dt>
+    <dd>
+    Removes a &lt;attributeAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element in position p.
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">p</span>
+         position of &lt;attributeAssessment&gt; child element.
+        </li>
+    </ul>
+
+
+    <h3>Raises:</h3>
+
+ <ul>
+ <li>error 1: "Error! assessmentStatement element with nil children list!".</li>
+ <li>error 2: "Error! assessmentStatement element with nil attributeAssessments list!."</li>
+ <li>error 3: "Error! assessmentStatement element doesn't have a attributeAssessment child in position p!".</li>
+ </ul>
+
+
+
+</dd>
+    <dt>
+    <a name = "setValueAssessment"></a>
+    <strong>setValueAssessment (valueAssessment)</strong>
+    </dt>
+    <dd>
+    Sets the &lt;valueAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">valueAssessment</span>
+         object representing the
+ &lt;valueAssessment&gt; ncl element.
+        </li>
+    </ul>
+
+
+    <h3>Raises:</h3>
+
+ <ul>
+ <li>error: "Error! Invalid valueAssessment element!".</li>
+ </ul>
+
+
+
+</dd>
+    <dt>
+    <a name = "getValueAssessment"></a>
+    <strong>getValueAssessment ()</strong>
+    </dt>
+    <dd>
+    Returns the &lt;valueAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.
+
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        valueAssessment object representing the &lt;valueAssessment&gt; ncl element.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "removeValueAssessment"></a>
+    <strong>removeValueAssessment ()</strong>
+    </dt>
+    <dd>
+    Removes the &lt;valueAssessment&gt; child element of
+ &lt;assessmentStatement&gt; ncl element.
+
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "childrenMap"></a>
+    <strong>childrenMap</strong>
+    </dt>
+    <dd>
+    List with maps to associate classes representing
+ children elements of &lt;assessmentStatement&gt; ncl element.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">attributeAssessment</span>
+         &lt;assessmentStatement&gt; child element.
+        </li>
+        <li><span class="parameter">valueAssessment</span>
+         &lt;valueAssessment&gt; child element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "attributesTypeMap"></a>
+    <strong>attributesTypeMap</strong>
+    </dt>
+    <dd>
+    List containing the data types of each attribute
+ belonging to &lt;assessmentStatement&gt; ncl element.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">comparator</span>
+         type of attribute comparator (string).
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "attributesStringValueMap"></a>
+    <strong>attributesStringValueMap</strong>
+    </dt>
+    <dd>
+    List containing all possible pre-definied values to string attributes
+ belonging to &lt;assessmentStatement&gt; ncl element .
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">comparator</span>
+         list with possible values to comparator attribute ("eq", "ne", "gt", "lt", "gte or "lte").
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "nameElem"></a>
+    <strong>nameElem</strong>
+    </dt>
+    <dd>
+    Name of &lt;assessmentStatement&gt; ncl element.
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2023-04-01 12:33:41 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
