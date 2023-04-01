@@ -38,15 +38,15 @@
 
 <h2>Modules</h2>
 <ul class="nowrap">
-  <li><strong>AssessmentStatement</strong></li>
+  <li><strong>AttributeAssessment</strong></li>
 </ul>
 
 </div>
 
 <div id="content">
 
-<h1>Module <code>AssessmentStatement</code></h1>
-<p>Implements <a href="http://handbook.ncl.org.br/doku.php?id=assessmentstatement"/>&lt;assessmentStatement&gt;</a> ncl element.</p>
+<h1>Module <code>AttributeAssessment</code></h1>
+<p>Implements <a href="http://handbook.ncl.org.br/doku.php?id=attributeassessment"/>&lt;attributeassessment&gt;</a> ncl element.</p>
 <p></p>
     <h3>Info:</h3>
     <ul>
@@ -58,84 +58,67 @@
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#create">create (attributes, full)</a></td>
-	<td class="summary">Returns a new AssessmentStatement object.</td>
+	<td class="name" nowrap><a href="#create">create (attributes)</a></td>
+	<td class="summary">Returns a new AttributeAssessment object.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#setComparator">setComparator (comparator)</a></td>
-	<td class="summary">Sets a value to comparator attribute of
- &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="name" nowrap><a href="#setRole">setRole (role)</a></td>
+	<td class="summary">Sets a value to role attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#getComparator">getComparator ()</a></td>
-	<td class="summary">Returns the value of comparator attribute of
- &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="name" nowrap><a href="#getRole">getRole ()</a></td>
+	<td class="summary">Returns the value of the role attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#addAttributeAssessment">addAttributeAssessment (attributeAssessment)</a></td>
-	<td class="summary">Adds a &lt;attributeAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="name" nowrap><a href="#setEventType">setEventType (eventType)</a></td>
+	<td class="summary">Sets a value to eventType attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#getAttributeAssessmentPos">getAttributeAssessmentPos (p)</a></td>
-	<td class="summary">Returns a &lt;attributeAssessments&gt; child element of
- &lt;assessmentStatement&gt; element
- in position p.</td>
+	<td class="name" nowrap><a href="#getEventType">getEventType ()</a></td>
+	<td class="summary">Returns the value of eventType attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#setAttributeAssessments">setAttributeAssessments (...)</a></td>
-	<td class="summary">Adds so many &lt;attributeAssessment&gt; child elements of the &lt;assessmentStatement&gt; element
- passed as parameters.</td>
+	<td class="name" nowrap><a href="#setKey">setKey (key)</a></td>
+	<td class="summary">Sets a value to key attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#removeAttributeAssessment">removeAttributeAssessment (attributeAssessment)</a></td>
-	<td class="summary">Removes a &lt;attributeAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="name" nowrap><a href="#getKey">getKey ()</a></td>
+	<td class="summary">Returns the value of key attribute of &lt;attributeAssessment&gt;</b> ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#removeAttributeAssessmentPos">removeAttributeAssessmentPos (p)</a></td>
-	<td class="summary">Removes a &lt;attributeAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element in position p.</td>
+	<td class="name" nowrap><a href="#setAttributeType">setAttributeType (attributeType)</a></td>
+	<td class="summary">Sets a value to attributeType attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#setValueAssessment">setValueAssessment (valueAssessment)</a></td>
-	<td class="summary">Sets the &lt;valueAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="name" nowrap><a href="#getAttributeType">getAttributeType ()</a></td>
+	<td class="summary">Returns the value of attributeType attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#getValueAssessment">getValueAssessment ()</a></td>
-	<td class="summary">Returns the &lt;valueAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="name" nowrap><a href="#setOffset">setOffset (offset)</a></td>
+	<td class="summary">Sets a value to offset attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#removeValueAssessment">removeValueAssessment ()</a></td>
-	<td class="summary">Removes the &lt;valueAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="name" nowrap><a href="#getOffset">getOffset ()</a></td>
+	<td class="summary">Returns the value of offset attribute of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 </table>
 <h2><a href="#Tables">Tables</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#childrenMap">childrenMap</a></td>
-	<td class="summary">List with maps to associate classes representing
- children elements of &lt;assessmentStatement&gt; ncl element.</td>
-	</tr>
-	<tr>
 	<td class="name" nowrap><a href="#attributesTypeMap">attributesTypeMap</a></td>
 	<td class="summary">List containing the data types of each attribute
- belonging to &lt;assessmentStatement&gt; ncl element.</td>
+ belonging to &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#attributesStringValueMap">attributesStringValueMap</a></td>
-	<td class="summary">List containing all possible pre-definied values to string attributes
- belonging to &lt;assessmentStatement&gt; ncl element .</td>
+	<td class="summary">List containing all possible pre-definied values to attributes of type string belonging to &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 </table>
 <h2><a href="#Fields">Fields</a></h2>
 <table class="function_list">
 	<tr>
 	<td class="name" nowrap><a href="#nameElem">nameElem</a></td>
-	<td class="summary">Name of &lt;assessmentStatement&gt; ncl element.</td>
+	<td class="summary">Name of &lt;attributeAssessment&gt; ncl element.</td>
 	</tr>
 </table>
 
@@ -148,15 +131,10 @@
     <dl class="function">
     <dt>
     <a name = "create"></a>
-    <strong>create (attributes, full)</strong>
+    <strong>create (attributes)</strong>
     </dt>
     <dd>
-    Returns a new AssessmentStatement object.
- If full flag is not nil, the object will
- receive default children objects of each children class.
-
- This case, full must be passed to the method with a valid number.
-
+    Returns a new AttributeAssessment object.
 
 
     <h3>Parameters:</h3>
@@ -164,16 +142,12 @@
         <li><span class="parameter">attributes</span>
          list of attributes to be initialized.
         </li>
-        <li><span class="parameter">full</span>
-         numeric flag to indicate if the object
-                will be created with filled children list.
-        </li>
     </ul>
 
     <h3>Returns:</h3>
     <ol>
 
-        new AssessmentStatement object created.
+        new AttributeAssessment object created.
     </ol>
 
 
@@ -181,19 +155,17 @@
 
 </dd>
     <dt>
-    <a name = "setComparator"></a>
-    <strong>setComparator (comparator)</strong>
+    <a name = "setRole"></a>
+    <strong>setRole (role)</strong>
     </dt>
     <dd>
-    Sets a value to comparator attribute of
- &lt;assessmentStatement&gt; ncl element.
+    Sets a value to role attribute of &lt;attributeAssessment&gt; ncl element.
 
 
     <h3>Parameters:</h3>
     <ul>
-        <li><span class="parameter">comparator</span>
-         comparator attribute of
- &lt;assessmentStatement&gt; ncl element.
+        <li><span class="parameter">role</span>
+         role attribute of &lt;attributeAssessment&gt; ncl element.
         </li>
     </ul>
 
@@ -203,20 +175,18 @@
 
 </dd>
     <dt>
-    <a name = "getComparator"></a>
-    <strong>getComparator ()</strong>
+    <a name = "getRole"></a>
+    <strong>getRole ()</strong>
     </dt>
     <dd>
-    Returns the value of comparator attribute of
- &lt;assessmentStatement&gt; ncl element.
-
+    Returns the value of the role attribute of &lt;attributeAssessment&gt; ncl element.
 
 
 
     <h3>Returns:</h3>
     <ol>
 
-        comparator attribute of &lt;assessmentStatement&gt; ncl element.
+        role role attribute of &lt;attributeAssessment&gt; ncl element.
     </ol>
 
 
@@ -224,20 +194,17 @@
 
 </dd>
     <dt>
-    <a name = "addAttributeAssessment"></a>
-    <strong>addAttributeAssessment (attributeAssessment)</strong>
+    <a name = "setEventType"></a>
+    <strong>setEventType (eventType)</strong>
     </dt>
     <dd>
-    Adds a &lt;attributeAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.
-
+    Sets a value to eventType attribute of &lt;attributeAssessment&gt; ncl element.
 
 
     <h3>Parameters:</h3>
     <ul>
-        <li><span class="parameter">attributeAssessment</span>
-         object representing the
- &lt;attributeAssessment&gt; ncl element.
+        <li><span class="parameter">eventType</span>
+         eventType attribute of &lt;attributeAssessment&gt; ncl element.
         </li>
     </ul>
 
@@ -247,149 +214,18 @@
 
 </dd>
     <dt>
-    <a name = "getAttributeAssessmentPos"></a>
-    <strong>getAttributeAssessmentPos (p)</strong>
+    <a name = "getEventType"></a>
+    <strong>getEventType ()</strong>
     </dt>
     <dd>
-    Returns a &lt;attributeAssessments&gt; child element of
- &lt;assessmentStatement&gt; element
- in position p.
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">p</span>
-         position of the object representing the &lt;attributeAssessments&gt; element.
-        </li>
-    </ul>
-
-
-
-
-
-</dd>
-    <dt>
-    <a name = "setAttributeAssessments"></a>
-    <strong>setAttributeAssessments (...)</strong>
-    </dt>
-    <dd>
-    Adds so many &lt;attributeAssessment&gt; child elements of the &lt;assessmentStatement&gt; element
- passed as parameters.
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">...</span>
-         objects representing the &lt;attributeAssessment&gt; ncl element.
-        </li>
-    </ul>
-
-
-
-
-
-</dd>
-    <dt>
-    <a name = "removeAttributeAssessment"></a>
-    <strong>removeAttributeAssessment (attributeAssessment)</strong>
-    </dt>
-    <dd>
-    Removes a &lt;attributeAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.
-
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">attributeAssessment</span>
-         object representing the &lt;attributeAssessment&gt; ncl element.
-        </li>
-    </ul>
-
-
-    <h3>Raises:</h3>
-
- <ul>
- <li>error 1: "Error! Invalid attributeAssessment element!."</li>
- <li>error 2: "Error! assessmentStatement element with nil children list!".</li>
- <li>error 3: "Error! assessmentStatement element with nil attributeAssessments list!".</li>
- </ul>
-
-
-
-</dd>
-    <dt>
-    <a name = "removeAttributeAssessmentPos"></a>
-    <strong>removeAttributeAssessmentPos (p)</strong>
-    </dt>
-    <dd>
-    Removes a &lt;attributeAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element in position p.
-
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">p</span>
-         position of &lt;attributeAssessment&gt; child element.
-        </li>
-    </ul>
-
-
-    <h3>Raises:</h3>
-
- <ul>
- <li>error 1: "Error! assessmentStatement element with nil children list!".</li>
- <li>error 2: "Error! assessmentStatement element with nil attributeAssessments list!."</li>
- <li>error 3: "Error! assessmentStatement element doesn't have a attributeAssessment child in position p!".</li>
- </ul>
-
-
-
-</dd>
-    <dt>
-    <a name = "setValueAssessment"></a>
-    <strong>setValueAssessment (valueAssessment)</strong>
-    </dt>
-    <dd>
-    Sets the &lt;valueAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.
-
-
-
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">valueAssessment</span>
-         object representing the
- &lt;valueAssessment&gt; ncl element.
-        </li>
-    </ul>
-
-
-    <h3>Raises:</h3>
-
- <ul>
- <li>error: "Error! Invalid valueAssessment element!".</li>
- </ul>
-
-
-
-</dd>
-    <dt>
-    <a name = "getValueAssessment"></a>
-    <strong>getValueAssessment ()</strong>
-    </dt>
-    <dd>
-    Returns the &lt;valueAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.
-
+    Returns the value of eventType attribute of &lt;attributeAssessment&gt; ncl element.
 
 
 
     <h3>Returns:</h3>
     <ol>
 
-        valueAssessment object representing the &lt;valueAssessment&gt; ncl element.
+        eventType eventType attribute of the &lt;attributeAssessment&gt; ncl element.
     </ol>
 
 
@@ -397,16 +233,117 @@
 
 </dd>
     <dt>
-    <a name = "removeValueAssessment"></a>
-    <strong>removeValueAssessment ()</strong>
+    <a name = "setKey"></a>
+    <strong>setKey (key)</strong>
     </dt>
     <dd>
-    Removes the &lt;valueAssessment&gt; child element of
- &lt;assessmentStatement&gt; ncl element.
+    Sets a value to key attribute of &lt;attributeAssessment&gt; ncl element.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+         key attribute of &lt;attributeAssessment&gt; ncl element.
+        </li>
+    </ul>
 
 
 
 
+
+</dd>
+    <dt>
+    <a name = "getKey"></a>
+    <strong>getKey ()</strong>
+    </dt>
+    <dd>
+    Returns the value of key attribute of &lt;attributeAssessment&gt;</b> ncl element.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        key attribute of &lt;attributeAssessment&gt; ncl element.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setAttributeType"></a>
+    <strong>setAttributeType (attributeType)</strong>
+    </dt>
+    <dd>
+    Sets a value to attributeType attribute of &lt;attributeAssessment&gt; ncl element.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">attributeType</span>
+         attributeType attribute of &lt;attributeAssessment&gt; element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getAttributeType"></a>
+    <strong>getAttributeType ()</strong>
+    </dt>
+    <dd>
+    Returns the value of attributeType attribute of &lt;attributeAssessment&gt; ncl element.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        attributeType attribute of attributeAssessment&gt; ncl element.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setOffset"></a>
+    <strong>setOffset (offset)</strong>
+    </dt>
+    <dd>
+    Sets a value to offset attribute of &lt;attributeAssessment&gt; ncl element.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">offset</span>
+         offset attribute of &lt;attributeAssessment&gt; element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getOffset"></a>
+    <strong>getOffset ()</strong>
+    </dt>
+    <dd>
+    Returns the value of offset attribute of &lt;attributeAssessment&gt; ncl element.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        offset attribute of &lt;attributeAssessment&gt; ncl element.
+    </ol>
 
 
 
@@ -417,42 +354,30 @@
 
     <dl class="function">
     <dt>
-    <a name = "childrenMap"></a>
-    <strong>childrenMap</strong>
-    </dt>
-    <dd>
-    List with maps to associate classes representing
- children elements of &lt;assessmentStatement&gt; ncl element.
-
-
-    <h3>Fields:</h3>
-    <ul>
-        <li><span class="parameter">attributeAssessment</span>
-         &lt;assessmentStatement&gt; child element.
-        </li>
-        <li><span class="parameter">valueAssessment</span>
-         &lt;valueAssessment&gt; child element.
-        </li>
-    </ul>
-
-
-
-
-
-</dd>
-    <dt>
     <a name = "attributesTypeMap"></a>
     <strong>attributesTypeMap</strong>
     </dt>
     <dd>
     List containing the data types of each attribute
- belonging to &lt;assessmentStatement&gt; ncl element.
+ belonging to &lt;attributeAssessment&gt; ncl element.
 
 
     <h3>Fields:</h3>
     <ul>
-        <li><span class="parameter">comparator</span>
-         type of attribute comparator (string).
+        <li><span class="parameter">role</span>
+         type of role attribute (string).
+        </li>
+        <li><span class="parameter">eventType</span>
+         type of eventType attribute (string).
+        </li>
+        <li><span class="parameter">key</span>
+         type of key attribute (string).
+        </li>
+        <li><span class="parameter">attributeType</span>
+         type of attributeType attribute (string).
+        </li>
+        <li><span class="parameter">offset</span>
+         type of offset attribute (string).
         </li>
     </ul>
 
@@ -466,14 +391,27 @@
     <strong>attributesStringValueMap</strong>
     </dt>
     <dd>
-    List containing all possible pre-definied values to string attributes
- belonging to &lt;assessmentStatement&gt; ncl element .
+    List containing all possible pre-definied values to attributes of type string belonging to &lt;attributeAssessment&gt; ncl element.
 
 
     <h3>Fields:</h3>
     <ul>
-        <li><span class="parameter">comparator</span>
-         list with possible values to comparator attribute ("eq", "ne", "gt", "lt", "gte or "lte").
+        <li><span class="parameter">eventType</span>
+         list with possible values to eventType attribute ("presentation", "selection" or "attribution").
+        </li>
+        <li><span class="parameter">key</span>
+         list with possible values to key attribute ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+ "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+ "U", "V", "W", "X", "Y", "Z", "*", "#", "MENU",
+ "INFO", "GUIDE", "CURSOR_DOWN", "CURSOR_LEFT",
+ "CURSOR_RIGHT", "CURSOR_UP", "CHANNEL_DOWN",
+ "CHANNEL_UP", "VOLUME_DOWN", "VOLUME_UP", "ENTER",
+ "RED", "GREEN", "YELLOW", "BLUE", "BACK", "EXIT",
+ "POWER", "REWIND", "STOP", "EJECT", "PLAY", "RECORD" or "PAUSE").
+        </li>
+        <li><span class="parameter">attributeType</span>
+         list with possible values to attributeType attribute ("nodeProperty", "occurrences", "repetition" or "state").
         </li>
     </ul>
 
@@ -491,7 +429,7 @@
     <strong>nameElem</strong>
     </dt>
     <dd>
-    Name of &lt;assessmentStatement&gt; ncl element.
+    Name of &lt;attributeAssessment&gt; ncl element.
 
 
 
@@ -507,7 +445,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2023-04-01 12:33:41 </i>
+<i style="float:right;">Last updated 2023-04-01 13:27:17 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

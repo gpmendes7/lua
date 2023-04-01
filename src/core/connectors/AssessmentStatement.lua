@@ -18,8 +18,8 @@ AssessmentStatement.nameElem = "assessmentStatement"
 ---
 -- List with maps to associate classes representing
 -- children elements of &lt;assessmentStatement&gt; ncl element.
--- @field attributeAssessment &lt;assessmentStatement&gt; child element.
--- @field valueAssessment &lt;valueAssessment&gt; child element.
+-- @field attributeAssessment &lt;assessmentStatement&gt; ncl child element.
+-- @field valueAssessment &lt;valueAssessment&gt; ncl child element.
 -- @table childrenMap
 AssessmentStatement.childrenMap = {
   attributeAssessment = {AttributeAssessment, "many"},
@@ -29,14 +29,14 @@ AssessmentStatement.childrenMap = {
 ---
 -- List containing the data types of each attribute
 -- belonging to &lt;assessmentStatement&gt; ncl element.
--- @field comparator type of attribute comparator (string).
+-- @field comparator type of comparator attribute (string).
 -- @table attributesTypeMap
 AssessmentStatement.attributesTypeMap = {
   comparator = "string"
 }
 
 ---
--- List containing all possible pre-definied values to string attributes
+-- List containing all possible pre-definied values to attributes of type string 
 -- belonging to &lt;assessmentStatement&gt; ncl element.
 -- @field comparator list with possible values to comparator attribute ("eq", "ne", "gt", "lt", "gte or "lte").
 -- @table attributesStringValueMap
@@ -48,12 +48,9 @@ AssessmentStatement.attributesStringValueMap = {
 -- Returns a new AssessmentStatement object. 
 -- If full flag is not nil, the object will
 -- receive default children objects of each children class.
--- 
 -- This case, full must be passed to the method with a valid number.  
---
 -- @param attributes list of attributes to be initialized.
--- @param full numeric flag to indicate if the object 
---                will be created with filled children list.
+-- @param full numeric flag to indicate if the object will be created with filled children list.
 -- @return new AssessmentStatement object created.
 function AssessmentStatement:create(attributes, full)
   local assessmentStatement = AssessmentStatement:new()
@@ -76,29 +73,22 @@ function AssessmentStatement:create(attributes, full)
 end
 
 ---
--- Sets a value to comparator attribute of 
--- &lt;assessmentStatement&gt; ncl element.
--- @param comparator comparator attribute of
--- &lt;assessmentStatement&gt; ncl element.
+-- Sets a value to comparator attribute of &lt;assessmentStatement&gt; ncl element.
+-- @param comparator comparator attribute of &lt;assessmentStatement&gt; ncl element.
 function AssessmentStatement:setComparator(comparator)
   self:addAttribute("comparator", comparator)
 end
 
 ---
--- Returns the value of comparator attribute of 
--- &lt;assessmentStatement&gt; ncl element. 
---
+-- Returns the value of comparator attribute of &lt;assessmentStatement&gt; ncl element. 
 -- @return comparator attribute of &lt;assessmentStatement&gt; ncl element.
 function AssessmentStatement:getComparator()
   return self:getAttribute("comparator")
 end
 
 ---
--- Adds a &lt;attributeAssessment&gt; child element of
--- &lt;assessmentStatement&gt; ncl element. 
--- 
--- @param attributeAssessment object representing the 
--- &lt;attributeAssessment&gt; ncl element.
+-- Adds a &lt;attributeAssessment&gt; ncl child element of &lt;assessmentStatement&gt; ncl element. 
+-- @param attributeAssessment object representing the &lt;attributeAssessment&gt; ncl element.
 function AssessmentStatement:addAttributeAssessment(attributeAssessment)
   if((type(attributeAssessment) == "table"
     and attributeAssessment["getNameElem"] ~= nil
@@ -121,11 +111,8 @@ function AssessmentStatement:addAttributeAssessment(attributeAssessment)
 end
 
 ---
--- Returns a &lt;attributeAssessments&gt; child element of
--- &lt;assessmentStatement&gt; element
--- in position p.
---
--- @param p position of the object representing the &lt;attributeAssessments&gt; element.
+-- Returns a &lt;attributeAssessments&gt; ncl child element of &lt;assessmentStatement&gt; ncl element in position p.
+-- @param p position of object representing the &lt;attributeAssessments&gt; ncl element.
 function AssessmentStatement:getAttributeAssessmentPos(p)
   if(self.attributeAssessments == nil)then
     error("Error! assessmentStatement element with nil attributeAssessments list!", 2)
@@ -137,9 +124,7 @@ function AssessmentStatement:getAttributeAssessmentPos(p)
 end
 
 ---
--- Adds so many &lt;attributeAssessment&gt; child elements of the &lt;assessmentStatement&gt; element
--- passed as parameters.
---
+-- Adds so many &lt;attributeAssessment&gt; ncl child elements of &lt;assessmentStatement&gt; ncl element passed as parameters.
 -- @param ... objects representing the &lt;attributeAssessment&gt; ncl element.
 function AssessmentStatement:setAttributeAssessments(...)
   if(#arg>0)then
@@ -150,9 +135,7 @@ function AssessmentStatement:setAttributeAssessments(...)
 end
 
 ---
--- Removes a &lt;attributeAssessment&gt; child element of 
--- &lt;assessmentStatement&gt; ncl element. 
--- 
+-- Removes a &lt;attributeAssessment&gt; ncl child element of &lt;assessmentStatement&gt; ncl element. 
 -- @param attributeAssessment object representing the &lt;attributeAssessment&gt; ncl element.
 -- @raise
 -- <ul>
@@ -184,10 +167,8 @@ function AssessmentStatement:removeAttributeAssessment(attributeAssessment)
 end
 
 ---
--- Removes a &lt;attributeAssessment&gt; child element of 
--- &lt;assessmentStatement&gt; ncl element in position p.
--- 
--- @param p position of &lt;attributeAssessment&gt; child element.
+-- Removes a &lt;attributeAssessment&gt; ncl child element of &lt;assessmentStatement&gt; ncl element in position p.
+-- @param p position of &lt;attributeAssessment&gt; ncl child element.
 -- @raise
 -- <ul>
 -- <li>error 1: "Error! assessmentStatement element with nil children list!".</li>
@@ -210,11 +191,8 @@ function AssessmentStatement:removeAttributeAssessmentPos(p)
 end
 
 ---
--- Sets the &lt;valueAssessment&gt; child element of
--- &lt;assessmentStatement&gt; ncl element. 
--- 
--- @param valueAssessment object representing the 
--- &lt;valueAssessment&gt; ncl element.
+-- Sets the &lt;valueAssessment&gt; child element of &lt;assessmentStatement&gt; ncl element. 
+-- @param valueAssessment object representing the &lt;valueAssessment&gt; ncl element.
 -- @raise
 -- <ul>
 -- <li>error: "Error! Invalid valueAssessment element!".</li>
@@ -248,18 +226,14 @@ function AssessmentStatement:setValueAssessment(valueAssessment)
 end
 
 ---
--- Returns the &lt;valueAssessment&gt; child element of 
--- &lt;assessmentStatement&gt; ncl element.
--- 
+-- Returns the &lt;valueAssessment&gt; child element of &lt;assessmentStatement&gt; ncl element.
 -- @return valueAssessment object representing the &lt;valueAssessment&gt; ncl element.
 function AssessmentStatement:getValueAssessment()
   return self.valueAssessment
 end
 
 ---
--- Removes the &lt;valueAssessment&gt; child element of
--- &lt;assessmentStatement&gt; ncl element.
--- 
+-- Removes the &lt;valueAssessment&gt; child element of &lt;assessmentStatement&gt; ncl element.
 function AssessmentStatement:removeValueAssessment()
   self:removeChild(self.valueAssessment)
   self.valueAssessment = nil
